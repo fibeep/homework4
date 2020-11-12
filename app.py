@@ -105,19 +105,19 @@ def get_min_temp(results):
     """Returns the minimum temp for the given hourly weather objects."""
     # TODO: Fill in this function to return the minimum temperature from the
     # hourly weather data.
-    pass
+    return result_json['main']['temp_min']
 
 def get_max_temp(results):
     """Returns the maximum temp for the given hourly weather objects."""
     # TODO: Fill in this function to return the maximum temperature from the
     # hourly weather data.
-    pass
+    return result_json['main']['temp_max']
 
 def get_lat_lon(city_name):
     geolocator = Nominatim(user_agent='Weather Application')
     location = geolocator.geocode(city_name)
     if location is not None:
-        return location.latitude, location.longitude
+        return result_json['coord']['lat'], result_json['coord']['lon']
     return 0, 0
 
 
