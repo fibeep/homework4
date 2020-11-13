@@ -105,8 +105,8 @@ def get_min_temp(results):
     """Returns the minimum temp for the given hourly weather objects."""
     # TODO: Fill in this function to return the minimum temperature from the
     # hourly weather data.
+    min_temp = 10000
     for time in results:
-        min_temp = 10000
         if time['temp'] < min_temp:
             min_temp = time['temp']
     return min_temp
@@ -115,8 +115,8 @@ def get_max_temp(results):
     """Returns the maximum temp for the given hourly weather objects."""
     # TODO: Fill in this function to return the maximum temperature from the
     # hourly weather data.
+    max_temp = -10000
     for time in results:
-        max_temp = -10000
         if time['temp'] > max_temp:
             max_temp = time['temp']
     return max_temp
