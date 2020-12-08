@@ -23,8 +23,6 @@ urllib3==1.25.10
 Werkzeug==1.0.1
 Flask-PyMongo
 gunicorn
-itsdangerous
-Jinja2
 MarkupSafe
 pymongo
 Werkzeug
